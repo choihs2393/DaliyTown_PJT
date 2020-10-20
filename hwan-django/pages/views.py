@@ -1,11 +1,11 @@
 from django.shortcuts import render
+import random
 
 # Create your views here.
 def index(request):
   return render(request, 'index.html')
 
 def hello(request):
-  import random
   pick = random.sample(range(1, 46), 6)
   return render(request, 'hello.html', context={
     'pick': pick,
@@ -13,3 +13,8 @@ def hello(request):
 
 def iam(request):
   return render(request, 'iam.html')
+
+def hi(request, name):
+  return render(request, 'hi.html', context={
+    'name': name,
+  })
