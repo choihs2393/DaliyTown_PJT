@@ -25,7 +25,7 @@ SECRET_KEY = '_l)wb^c5+1xw*=(w^0!1sy1$g4ikn#e*l854#qjnff$ex0pzzl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # custom
     'pages',
+    'boards',
 ]
 
 MIDDLEWARE = [
