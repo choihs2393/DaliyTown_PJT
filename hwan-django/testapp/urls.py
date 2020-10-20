@@ -24,4 +24,6 @@ urlpatterns = [
     path('iam/', views.iam),
     path('hi/<str:name>', views.hi),
     path('add/<int:prev>/<int:next>', views.add),
+    path('lunch/', views.lunch),
+    path('posts/<int:id>/', views.posts),
 ]
