@@ -18,3 +18,8 @@ def hi(request, name):
   return render(request, 'hi.html', context={
     'name': name,
   })
+
+def add(request, prev, next):
+  return render(request, 'add.html', context={
+    'result': prev+next,
+  })
